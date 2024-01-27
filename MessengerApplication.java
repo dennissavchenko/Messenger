@@ -11,7 +11,7 @@ import java.util.Objects;
 public class MessengerApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MessengerApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MessengerApplication.class.getResource("view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 350, 500);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm());
         stage.setTitle("Messenger");
